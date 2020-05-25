@@ -3,8 +3,6 @@ import random as rnd
 import numpy as np
 import math
 
-# Part A
-# Question 1
 def integrate_fire_single(time, step, Tm, El, Vr, Vt, Rm, Ie):
     iterations = int(time/step)
     voltage = np.zeros(iterations + 1) 
@@ -15,7 +13,6 @@ def integrate_fire_single(time, step, Tm, El, Vr, Vt, Rm, Ie):
             voltage[i+1] = Vr
     return voltage
 
-#Question 2
 def integrate_fire_pair(time, step, Tm, El, Vr, Vt, Rm, Ie, Ts, Gs, Es):
     iterations = int(time/step)
     voltage = np.zeros((2, iterations + 1))
@@ -31,8 +28,6 @@ def integrate_fire_pair(time, step, Tm, El, Vr, Vt, Rm, Ie, Ts, Gs, Es):
             activity[j] = activity[j] + step * (-activity[j]/Ts)
     return voltage
 
-# Part B
-# Question 1
 def integrate_fire_synapses(time, step, Tm, El, Vr, Vt, Rm, Ts, Gs, Es, Fr):
     iterations = int(time/step)
     voltage = np.zeros(iterations + 1)
@@ -49,7 +44,6 @@ def integrate_fire_synapses(time, step, Tm, El, Vr, Vt, Rm, Ts, Gs, Es, Fr):
             activity[j] = activity[j] + step * (-activity[j]/Ts)
     return voltage
 
-# Question 2/3
 def integrate_fire_synapses_stdp(stdp, time, step, Tm, El, Vr, Vt, Rm, Ts, Gs, Es, Fr, Ap, An, Tp, Tn):
     iterations = int(time/step)
     voltage = np.zeros(iterations + 1)
@@ -77,7 +71,6 @@ def integrate_fire_synapses_stdp(stdp, time, step, Tm, El, Vr, Vt, Rm, Ts, Gs, E
                 conductance[j] = np.clip(conductance[j], 0, Gs)
     return voltage, conductance
 
-# Question 4
 def integrate_fire_synapses_stdp_correlated(stdp, time, step, Tm, El, Vr, Vt, Rm, Ts, Gs, Es, Fr, Ap, An, Tp, Tn, Bc):
     iterations = int(time/step)
     voltage = np.zeros(iterations + 1)
