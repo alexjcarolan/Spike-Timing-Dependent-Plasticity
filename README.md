@@ -4,6 +4,6 @@ Simulation of an integrate-and-fire neuron with spike-timing-dependent plasticit
 |:---:|:---:|:---:|
 |![](outputs/IAF_1.png)|![](outputs/IAF_2.png)|![](outputs/IAF_3.png)|
 
-|STDP - Postsynaptic Firing Rate|STDP - Presynaptic VS Postsynaptic Firing Rate|STDP - Steady State Synaptic Strengths|
+|STDP - Postsynaptic Firing Rate|STDP - Postynaptic VS Presynaptic Firing Rate|STDP - Steady State Synaptic Strengths|
 |:---:|:---:|:---:|
 |![](outputs/STDP_1.png)|![](outputs/STDP_2.png)|![](outputs/STDP_3.png)|
