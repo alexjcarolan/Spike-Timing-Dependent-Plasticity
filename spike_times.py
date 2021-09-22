@@ -1,7 +1,7 @@
-import matplotlib.pyplot as plt
-import random as rnd
-import numpy as np
 import math
+import numpy as np
+import random as rnd
+import matplotlib.pyplot as plt
 
 def integrate_fire_single(time, step, Tm, El, Vr, Vt, Rm, Ie):
     iterations = int(time/step)
